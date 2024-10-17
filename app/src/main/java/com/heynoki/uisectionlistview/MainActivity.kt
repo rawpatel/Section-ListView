@@ -5,9 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.ui.res.painterResource
-import com.heynoki.uisectionlistview.section.categories.Allergy
-import com.heynoki.uisectionlistview.section.categories.AllergyHeader
-import com.heynoki.uisectionlistview.section.categories.AllergySection
+import com.heynoki.uisectionlistview.section.model.Allergy
+import com.heynoki.uisectionlistview.section.model.AllergyHeader
+import com.heynoki.uisectionlistview.section.model.AllergySection
 import com.heynoki.uisectionlistview.section.categories.AllergySectionWithHeader
 import com.heynoki.uisectionlistview.ui.theme.UiSectionListViewTheme
 
@@ -61,8 +61,8 @@ class MainActivity : ComponentActivity() {
 
                 val sampleAllergies2 = listOf(
                     Allergy(
-                        title = "Penicillin Allergy, Diarrhea, Conjunctivitis, Dizziness/Lightheadedness, Cough, Facial swelling",
-                        reaction = "Hives, swelling",
+                        title = "Penicillin Allergy",
+                        reaction = "Hives, swelling, Diarrhea, Conjunctivitis, Dizziness/Lightheadedness, Cough, Facial swelling",
                         onsetDate = "11/05/2022",
                         severityLevel = "low",
                         icon1 = painterResource(R.drawable.green_circle),
@@ -96,7 +96,7 @@ class MainActivity : ComponentActivity() {
 
                 val sampleSections = listOf(
                     AllergySection(sectionTitle = "Current Allergies", allergies = sampleAllergies1),
-                    AllergySection(sectionTitle = "Past Allergies", allergies = sampleAllergies1)
+                    AllergySection(sectionTitle = "Past Allergies", allergies = sampleAllergies2)
                 )
                 AllergySectionWithHeader(
                     header = AllergyHeader(headerTitle = "Patient Allergy Information"),

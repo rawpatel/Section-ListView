@@ -13,7 +13,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.heynoki.uisectionlistview.section.CustomCardViewAllergies
+import com.heynoki.uisectionlistview.section.model.AllergyHeader
+import com.heynoki.uisectionlistview.section.model.AllergySection
 import com.heynoki.uisectionlistview.ui.theme.Purple80
 
 @Composable

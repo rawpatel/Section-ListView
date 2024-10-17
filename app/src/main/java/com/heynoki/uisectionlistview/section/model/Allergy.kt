@@ -1,4 +1,4 @@
-package com.heynoki.uisectionlistview.section.categories
+package com.heynoki.uisectionlistview.section.model
 
 import androidx.compose.ui.graphics.painter.Painter
 
